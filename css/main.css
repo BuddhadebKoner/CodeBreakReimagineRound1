@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Teko:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 100vw;
+    height: 500vw;
+    font-family: 'Teko', 'Oswald', sans-serif;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../images/bg.svg');
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    /* background-position: center; */
+
+}
+
+
+
+/* Here All styles for navbar */
+navbar {
+    width: 100vw;
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    z-index: 1000;
+    transition: 0.5s;
+}
+
+Hero {
+    width: 100vw;
+    height: 90vh;
+    background: transparent;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../prototype/image/uwp3806816.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* Here All styles for navbar */
+
+.navbar_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
+    gap: 60px;
+}
+
+.logo {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: fit-content;
+    height: fit-content;
+}
+
+.menu {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #eca800;
+    font-size: 18px;
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+    font-size: 1.8rem;
+}
+
+.downloads_container {
+    gap: 1px;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.download_nav_links {
+    font-size: 2rem;
+    text-decoration: none;
+    width: fit-content;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px 0 30px;
+    background: #d49700;
+    color: black;
+}
+
+.card_nav_link {
+    font-size: 2rem;
+    padding: 0 40px 0 40px;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+/*  Hero section  */
+
+.hero_containe{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.Hero_text{
+    line-height: 1;
+    font-size: 7rem;
+}

@@ -1,0 +1,17 @@
+/* Dark mode scrollbar */
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
