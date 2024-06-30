@@ -33,3 +33,18 @@ gsap.to(".navbar-links-a-tag", {
   ease: "power4.out",
   duration: 0.02,
 });
+
+
+// history horizontal scroll animation
+gsap.to("#battlegroundTextOutline", {
+  transform: "translateX(-80%)",
+  scrollTrigger: {
+    trigger: ".india_ki_heartbeat",
+    scroller: "body",
+    start: "top 0%",
+    end: "bottom -100%",
+    scrub: 1,
+    pin : true,
+    markers: true,
+  },
+});
