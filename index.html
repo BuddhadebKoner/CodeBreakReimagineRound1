@@ -3,10 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
+    <!-- google fronts are here -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap"
         rel="stylesheet">
+    <!-- shrijs css -->
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+    <!-- Local style files -->
     <link rel="stylesheet" href="./css/scrollbar.css">
     <link rel="stylesheet" href="./css/main.css">
+
+    <!-- assets icons are here -->
     <link rel="shortcut icon" href="./assets/icons/webicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BATTLE GROUND MOBILE INDIA</title>
@@ -14,73 +20,85 @@
 
 <body>
     <!-- cursor follow div -->
-    <div id="cursorContainer">
-        <div id="mouseFollow"></div>
-    </div>
+    <div id="mouseFollow"></div>
 
     <!-- navbar section -->
-    <navbar>
-        <div class="navbar_container">
-            <div class="logo">
-                <a href="">
-                    <img src="./images/logo.png" alt="logo">
-                </a>
+    <div id="main-parent">
+        <navbar>
+            <div class="navbar_container">
+                <div class="logo">
+                    <a href="">
+                        <img src="./images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="menu">
+                    <a class="navbar-links-a-tag" href="">HOME</a>
+                    <a class="navbar-links-a-tag" href="./store.html">STORE</a>
+                    <a class="navbar-links-a-tag" href="./wapons.html">WAPONS</a>
+                    <a class="navbar-links-a-tag" href="https://esports-battlegroundsmobileindia.com/"
+                        target="_blank">ESPORTS
+                        <img src="./assets/icons/open_in_new.svg" alt="">
+                    </a>
+                    <a class="navbar-links-a-tag" href="https://esports-battlegroundsmobileindia.com/"
+                        target="_blank">SUPPORTS
+                        <img src="./assets/icons/open_in_new.svg" alt="">
+                    </a>
+                    <a class="navbar-links-a-tag" href="./history.html">HISTORY</a>
+                </div>
+                <div class="downloads_container">
+                    <a href="" class="download_nav_links">IOS DOWNLOADS</a>
+                    <a href="" class="download_nav_links">ADS DOWNLOADS</a>
+                    <a href="" class="card_nav_link">
+                        <img src="./assets/icons/cart.svg" alt="">
+                    </a>
+                </div>
             </div>
-            <div class="menu">
-                <a href="">HOME</a>
-                <a href="">NEWS</a>
-                <a href="">REDEEM</a>
-                <a href="">ESPORTS
-                    <img src="./assets/icons/open_in_new.svg" alt="">
-                </a>
-                <a href="">SUPPORTS
-                    <img src="./assets/icons/open_in_new.svg" alt="">
-                </a>
-                <a href="">GAME RESPONSIBLY</a>
+        </navbar>
+
+
+        <!-- Hero section -->
+        <Hero>
+            <img class="battleground-outline-hero" src="./images/herobg.jpg" alt="">
+            <div class="hero_container">
+                <h1 class="Hero_text">INDIA KA <br />BATTLEGROUNDS</h1>
             </div>
-            <div class="downloads_container">
-                <a href="" class="download_nav_links">IOS DOWNLOADS</a>
-                <a href="" class="download_nav_links">ADS DOWNLOADS</a>
-                <a href="" class="card_nav_link">
-                    <img src="./assets/icons/cart.svg" alt="">
-                </a>
+        </Hero>
+
+        <!-- content section -->
+        <content>
+            <div class="india_ki_heartbeat">
+                
             </div>
-        </div>
-    </navbar>
+            <div class="news_container">
 
-    <!-- Hero section -->
-    <Hero>
-        <div class="hero_container">
-            <h1 class="Hero_text">INDIA KA <br />BATTLEGROUNDS</h1>
-        </div>
-    </Hero>
+            </div>
+            <div class="slider_container">
 
-    <!-- content section -->
-    <content>
-        <div class="india_ki_heartbeat">
+            </div>
+        </content>
 
-        </div>
-        <div class="news_container">
-
-        </div>
-        <div class="slider_container">
-
-        </div>
-    </content>
-
-    <!-- footer section -->
-    <footer>
-    </footer>
+        <!-- footer section -->
+        <footer>
+        </footer>
+    </div>
 
 
 
     <!-- all the scripts -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    <!-- sheri js is here -->
+    <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+
     <!-- lenis for smooth scrolling -->
     <script src="https://unpkg.com/lenis@1.1.5/dist/lenis.min.js"></script>
     <!-- custom js -->
     <script src="./vendor/gsap/gsap.js"></script>
+    <script src="./vendor/sheri.js/sheri.js"></script>
     <script src="./js/main.js"></script>
 </body>
 
