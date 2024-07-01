@@ -449,3 +449,10 @@ content {
     border: 1px solid white;
     font-family: 'Teko', 'Oswald', sans-serif;
 }
+
+/* slider section is here */
+.slider_container{
+    width: 100vw;
+    height: 100vh;
+}
+

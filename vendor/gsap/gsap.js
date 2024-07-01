@@ -44,7 +44,58 @@ gsap.to("#battlegroundTextOutline", {
     start: "top 0%",
     end: "bottom -100%",
     scrub: 1,
-    pin : true,
+    pin: true,
     markers: true,
   },
 });
+
+// slider TEXT animation
+
+// swiper js for slider
+var swiper2 = new Swiper(".mySwiper2", {
+  loop: true,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+  on: {
+    transitionEnd: function () {
+      animateText();
+    },
+  },
+});
+
+function animateText() {
+  // Reset the animation state of all slide texts
+  gsap.set(".swiper-slide .slider_hero_text_container h1", { x: 0, opacity: 1 });
+
+  // Animate the active slide's text
+  gsap.fromTo(".swiper-slide-active .slider_hero_text_container h1", 
+    { 
+        x: 200, 
+        opacity: 0, 
+        skewX: 10, 
+        scale: 0.8 
+    }, 
+    { 
+        x: 0, 
+        opacity: 1, 
+        skewX: 0, 
+        scale: 1, 
+        duration: 1.5, 
+        ease: "elastic.out(1, 0.5)",
+        stagger: {
+            amount: 0.2
+        } 
+    }
+);
+
+}
+
+// Initial animation
+animateText();
