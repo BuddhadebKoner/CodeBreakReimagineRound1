@@ -35,19 +35,6 @@ gsap.to(".navbar-links-a-tag", {
 });
 
 
-// history horizontal scroll animation
-gsap.to("#battlegroundTextOutline", {
-  transform: "translateX(-80%)",
-  scrollTrigger: {
-    trigger: ".india_ki_heartbeat",
-    scroller: "body",
-    start: "top 0%",
-    end: "bottom -100%",
-    scrub: 1,
-    pin: true,
-    markers: true,
-  },
-});
 
 // slider TEXT animation
 
@@ -60,7 +47,7 @@ var swiper2 = new Swiper(".mySwiper2", {
     prevEl: ".swiper-button-prev",
   },
   autoplay: {
-    delay: 2000,
+    delay: 4000,
     disableOnInteraction: false,
   },
   on: {
@@ -75,27 +62,47 @@ function animateText() {
   gsap.set(".swiper-slide .slider_hero_text_container h1", { x: 0, opacity: 1 });
 
   // Animate the active slide's text
-  gsap.fromTo(".swiper-slide-active .slider_hero_text_container h1", 
-    { 
-        x: 200, 
-        opacity: 0, 
-        skewX: 10, 
-        scale: 0.8 
-    }, 
-    { 
-        x: 0, 
-        opacity: 1, 
-        skewX: 0, 
-        scale: 1, 
-        duration: 1.5, 
-        ease: "elastic.out(1, 0.5)",
-        stagger: {
-            amount: 0.2
-        } 
+  gsap.fromTo(".swiper-slide-active .slider_hero_text_container h1",
+    {
+      x: 200,
+      opacity: 0,
+      skewX: 10,
+      scale: 0.8
+    },
+    {
+      x: 0,
+      opacity: 1,
+      skewX: 0,
+      scale: 1,
+      duration: 1.5,
+      ease: "elastic.out(1, 0.5)",
+      stagger: {
+        amount: 0.2
+      }
     }
-);
+  );
 
 }
-
 // Initial animation
 animateText();
+
+
+
+
+// History section horizantal scroll
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(".india_ki_heartbeat_video_container", {
+  xPercent: -100,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".india_ki_heartbeat",
+    scroller: "body",
+    start: "top 0%",
+    end: "+=" + window.innerWidth,
+    scrub: 1,
+    pin: true,
+    markers: true,
+  },
+});

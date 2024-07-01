@@ -1,0 +1,304 @@
+/* Responsive styles */
+
+/* Mobile devices */
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
+    .navbar_container {
+        padding: 0 10px;
+        gap: 20px;
+    }
+
+    .menu a {
+        font-size: 1.2rem;
+    }
+
+    .downloads_container {
+        padding: 0 10px;
+    }
+
+    .download_nav_links,
+    .card_nav_link {
+        font-size: 1.2rem;
+        padding: 0 15px;
+    }
+
+    Hero {
+        height: 30rem;
+    }
+
+    .Hero_text {
+        font-size: 4rem;
+    }
+
+    .india_ki_heartbeat {
+        font-size: 1.5rem;
+    }
+
+    .news_container_heading {
+        font-size: 2rem;
+        padding-top: 5rem;
+    }
+
+    .news_container {
+        padding: 2rem 2rem 7rem 2rem;
+    }
+
+    .news_heading {
+        font-size: 3rem;
+    }
+
+    .updates_container {
+        width: 100%;
+    }
+
+    .update_container_news_section {
+        width: 100%;
+    }
+
+    .news_heading {
+        font-size: 1.5rem;
+    }
+
+    .news_list_container1_card img {
+        width: 100px;
+    }
+
+    .hero_card_subHeading h1 {
+        font-size: 0.8rem;
+    }
+
+    .hero_card_subHeading p {
+        font-size: 0.6rem;
+    }
+
+    .hero_card_subHeading a {
+        font-size: 10px;
+    }
+
+    .get_more_news_btn {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+
+    .slider_container {
+        height: 30rem;
+    }
+
+    .india_ki_heartbeat_video_container {
+        height: 30rem;
+    }
+
+    .panel {
+        padding: 50px;
+        gap: 20px;
+    }
+
+    .partners_streamers_container {
+        height: 30rem;
+    }
+}
+
+/* Tablet devices */
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 15px;
+    }
+
+    .navbar_container {
+        padding: 0 15px;
+        gap: 40px;
+    }
+
+    .menu a {
+        font-size: 1.5rem;
+    }
+
+    .downloads_container {
+        padding: 0 15px;
+    }
+
+    .download_nav_links,
+    .card_nav_link {
+        font-size: 1.5rem;
+        padding: 0 20px;
+    }
+
+    Hero {
+        height: 40rem;
+    }
+
+    .Hero_text {
+        font-size: 6rem;
+    }
+
+    .india_ki_heartbeat {
+        font-size: 1.8rem;
+    }
+
+    .news_container_heading {
+        font-size: 2.5rem;
+        padding-top: 7rem;
+    }
+
+    .news_container {
+        padding: 2rem 5rem 7rem 5rem;
+    }
+
+    .news_heading {
+        font-size: 3.5rem;
+    }
+
+    .updates_container {
+        width: 80%;
+    }
+
+    .update_container_news_section {
+        width: 80%;
+    }
+
+    .news_heading {
+        font-size: 1.8rem;
+    }
+
+    .news_list_container1_card img {
+        width: 150px;
+    }
+
+    .hero_card_subHeading h1 {
+        font-size: 0.9rem;
+    }
+
+    .hero_card_subHeading p {
+        font-size: 0.7rem;
+    }
+
+    .hero_card_subHeading a {
+        font-size: 11px;
+    }
+
+    .get_more_news_btn {
+        font-size: 1.4rem;
+        padding: 11px 22px;
+    }
+
+    .slider_container {
+        height: 40rem;
+    }
+
+    .india_ki_heartbeat_video_container {
+        height: 35rem;
+    }
+
+    .panel {
+        padding: 75px;
+        gap: 30px;
+    }
+
+    .partners_streamers_container {
+        height: 40rem;
+    }
+}
+
+/* Desktop devices */
+@media (min-width: 1025px) {
+    body {
+        font-size: 16px;
+    }
+
+    .navbar_container {
+        padding: 0 20px;
+        gap: 60px;
+    }
+
+    .menu a {
+        font-size: 1.8rem;
+    }
+
+    .downloads_container {
+        padding: 0 30px;
+    }
+
+    .download_nav_links,
+    .card_nav_link {
+        font-size: 2rem;
+        padding: 0 30px;
+    }
+
+    Hero {
+        height: 50rem;
+    }
+
+    .Hero_text {
+        font-size: 7rem;
+    }
+
+    .india_ki_heartbeat {
+        font-size: 2rem;
+    }
+
+    .news_container_heading {
+        font-size: 3rem;
+        padding-top: 10rem;
+    }
+
+    .news_container {
+        padding: 2rem 7rem 7rem 7rem;
+    }
+
+    .news_heading {
+        font-size: 4rem;
+    }
+
+    .updates_container {
+        width: 60%;
+    }
+
+    .update_container_news_section {
+        width: 40%;
+    }
+
+    .news_heading {
+        font-size: 2rem;
+    }
+
+    .news_list_container1_card img {
+        width: 200px;
+    }
+
+    .hero_card_subHeading h1 {
+        font-size: 1rem;
+    }
+
+    .hero_card_subHeading p {
+        font-size: 0.8rem;
+    }
+
+    .hero_card_subHeading a {
+        font-size: 12px;
+    }
+
+    .get_more_news_btn {
+        font-size: 1.6rem;
+        padding: 12px 24px;
+    }
+
+    .slider_container {
+        height: 50rem;
+    }
+
+    .india_ki_heartbeat_video_container {
+        height: 40rem;
+    }
+
+    .panel {
+        padding: 100px;
+        gap: 50px;
+    }
+
+    .partners_streamers_container {
+        height: 50rem;
+    }
+}

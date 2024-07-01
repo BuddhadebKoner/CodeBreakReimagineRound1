@@ -11,7 +11,7 @@ body {
     width: 100vw;
     height: 500vw;
     font-family: 'Teko', 'Oswald', sans-serif;
-    color: #333;
+    color: #24272a;
     font-size: 16px;
     line-height: 1.6;
     overflow-y: auto;
@@ -26,8 +26,6 @@ body {
     display: flex;
     flex-direction: column;
 }
-
-
 
 /* Here All styles for navbar */
 navbar {
@@ -140,8 +138,7 @@ navbar {
 
 Hero {
     width: 100vw;
-    height: 90vh;
-    background: transparent;
+    height: 50rem;
     color: white;
     display: flex;
     align-items: center;
@@ -154,7 +151,7 @@ Hero {
     position: absolute;
     bottom: unset;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: fit-content;
     pointer-events: none;
     user-select: none;
@@ -194,7 +191,7 @@ Hero {
 content {
     width: 100%;
     height: 300vh;
-    background: transparent;
+    background: #1b1b1b;
 }
 
 /* within content india_ki_heartbeat section here */
@@ -219,6 +216,10 @@ content {
     justify-content: center;
 }
 
+.india_ki_heartbeat_heading h1 {
+    color: #eca800;
+}
+
 .india_ki_heartbeat_video_container {
     width: fit-content;
     height: 100%;
@@ -238,10 +239,10 @@ content {
 .news_container_heading {
     width: 100%;
     height: fit-content;
-    background: #1b1b1b;
+    background: #24272a;
     font-size: 3rem;
     color: white;
-    padding-top: 10rem;
+    padding-top: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -250,7 +251,7 @@ content {
 
 .news_container {
     width: 100%;
-    height: 100vh;
+    height: 60rem;
     background: #24272a;
     box-sizing: border-box;
     padding: 2rem 7rem 7rem 7rem;
@@ -270,7 +271,7 @@ content {
 .updates_container {
     width: 60%;
     height: 100%;
-    background: transparent;
+    background: #24272a;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -281,7 +282,7 @@ content {
 .update_container_hero_card {
     width: 100%;
     height: 50%;
-    background: transparent;
+    background: #24272a;
     padding: 3rem 3rem 1rem 3rem;
     box-sizing: border-box;
 }
@@ -296,7 +297,7 @@ content {
 .update_container_subHero_card {
     width: 100%;
     height: 50%;
-    background: transparent;
+    background: #24272a;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -451,8 +452,37 @@ content {
 }
 
 /* slider section is here */
-.slider_container{
+.slider_container {
     width: 100vw;
-    height: 100vh;
+    height: 50rem;
+    padding: 2rem 2rem 2rem 2rem;
+    background: #24272a;
 }
 
+
+.india_ki_heartbeat_video_container {
+    width: 200vw;
+    height: 40rem;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.panel {
+    width: 400vw;
+    height: 100%;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    color: #f9f6f0;
+    gap: 50px;
+    background-color: #a82626;
+}
+
+.partners_streamers_container {
+    width: 100%;
+    height: 50rem;
+    background: #24272a;
+    color: #eca800;
+}
