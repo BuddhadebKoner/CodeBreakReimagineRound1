@@ -235,7 +235,7 @@ content {
 }
 
 /* News container section is here */
-.news_container_heading{
+.news_container_heading {
     width: 100%;
     height: fit-content;
     background: #1b1b1b;
@@ -250,18 +250,21 @@ content {
 
 .news_container {
     width: 100%;
-    height: 130vh;
-    background: #1b1b1b;
+    height: 100vh;
+    background: #24272a;
     box-sizing: border-box;
-    padding: 2rem;
+    padding: 2rem 7rem 7rem 7rem;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
 }
 
-.news_heading{
+.news_heading {
+    width: fit-content;
+    line-height: 1;
     color: white;
+    font-size: 4rem;
 }
 
 .updates_container {
@@ -271,7 +274,7 @@ content {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -279,17 +282,18 @@ content {
     width: 100%;
     height: 50%;
     background: transparent;
-    padding: 1rem;
+    padding: 3rem 3rem 1rem 3rem;
     box-sizing: border-box;
 }
-.update_container_hero_card img{
-    border: 1px solid white;
+
+.update_container_hero_card img {
+    border: 0.5px solid white;
     width: 100%;
     height: 100%;
     object-fit: cover
 }
 
-.update_container_subHero_card{
+.update_container_subHero_card {
     width: 100%;
     height: 50%;
     background: transparent;
@@ -300,28 +304,148 @@ content {
     justify-content: center;
 }
 
-.subhero{
+.subhero {
     width: 50%;
     height: 100%;
     background: transparent;
-    padding: 1rem;
 }
-.subhero img{
+
+.subhero_1 {
+    padding: 3rem 2rem 0rem 3rem;
+}
+
+.subhero_2 {
+    padding: 3rem 3rem 0rem 2rem;
+}
+
+.subhero img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border: 1px solid white;
+    border: 0.5px solid white;
 }
 
+
+.devided_line {
+    margin: 5px 0 5px 0;
+}
+
+/* news container */
 .update_container_news_section {
     width: 40%;
     height: 100%;
     background: transparent;
-    padding: 2rem;
+    padding: 3rem 1rem 0rem 1rem;
     display: flex;
     flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
 }
 
-.devided_line{
-    margin: 1rem 0 1rem 0;
+.news_heading {
+    width: fit-content;
+    height: fit-content;
+    font-size: 2rem;
+}
+
+.news_container_heroCard_caontainer {
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.news_container_heroCard {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border: 1px solid #a1a1a1;
+}
+
+.hero_card_Heading {
+    color: white;
+    font-weight: 100;
+}
+
+.news_list_container {
+    width: 100%;
+    height: fit-content;
+    background: transparent;
+}
+
+.news_list_container1 {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.news_list_container1_card {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.news_list_container1_card img {
+    width: 200px;
+    border: 1px solid #a1a1a1;
+}
+
+.hero_card_subHeading {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    font-family: monospace, sans-serif;
+
+}
+
+.hero_card_subHeading h1 {
+    font-size: 1rem;
+    color: white;
+    font-weight: 100;
+    line-height: 1.2;
+}
+
+.hero_card_subHeading p {
+    font-size: 0.8rem;
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    line-height: 1;
+}
+
+.hero_card_subHeading a {
+    padding: 3px 16px 3px 16px;
+    background: #eca800;
+    border-radius: 2px;
+    color: rgb(0, 0, 0);
+    font-family: monospace, sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.news_list_btn_link {
+    width: 100%;
+    height: fit-content;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    padding-top: 1rem;
+}
+
+.get_more_news_btn {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: white;
+    padding: 12px 24px;
+    border: 1px solid white;
+    font-family: 'Teko', 'Oswald', sans-serif;
 }
