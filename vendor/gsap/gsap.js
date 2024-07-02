@@ -103,6 +103,6 @@ gsap.to(".india_ki_heartbeat_video_container", {
     end: "+=" + window.innerWidth,
     scrub: 1,
     pin: true,
-    markers: true,
+    markers: false,
   },
 });
