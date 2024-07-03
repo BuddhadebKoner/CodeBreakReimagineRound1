@@ -9,7 +9,7 @@
 
 body {
     width: 100vw;
-    height: 500vw;
+    height: fit-content;
     font-family: 'Teko', 'Oswald', sans-serif;
     color: #24272a;
     font-size: 16px;
@@ -27,9 +27,10 @@ a {
 
 #mainparent {
     width: 100%;
-    height: 100%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
+    background: transparent;
 }
 
 /* Here All styles for navbar */
@@ -54,7 +55,7 @@ navbar {
     border-radius: 50%;
     pointer-events: none;
     opacity: 0;
-    z-index: 999;
+    z-index: 900;
 }
 
 /* Here All styles for navbar */
@@ -94,7 +95,7 @@ navbar {
 .menu a {
     display: inline-block;
     text-decoration: none;
-    color: #eca800;
+    color: #bab5ab;
     font-size: 18px;
     margin: 0 10px;
     padding: 10px;
@@ -124,6 +125,32 @@ navbar {
     padding: 0 30px 0 30px;
     background: #d49700;
     color: black;
+}
+
+/* Grow */
+.download_nav_links {
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.download_nav_links:hover,
+.download_nav_links:focus,
+.download_nav_links:active {
+    border: 1px solid white;
+    transform: scale(1.1);
+}
+
+.navbar-links-a-tag{
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.navbar-links-a-tag:hover,
+.navbar-links-a-tag:focus,
+.navbar-links-a-tag:active {
+    color: #eca800;
+    border-bottom: 1px solid white;
+    transform: scale(1.1);
 }
 
 .card_nav_link {
@@ -173,13 +200,14 @@ Hero {
 }
 
 .hero_container {
-    width: fit-content;
-    height: fit-content;
-    background: #000;
+    width: 100%;
+    height: 100%;
+    background: transparent;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     flex-direction: column;
+    padding: 0rem 0rem 0 5rem;
     gap: 20px;
 
 }
@@ -187,7 +215,9 @@ Hero {
 .Hero_text {
     user-select: none;
     line-height: 1;
-    font-size: 7rem;
+    font-size: 8rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
 }
 
 
@@ -195,9 +225,10 @@ Hero {
 
 content {
     width: 100%;
-    height: 300vh;
+    height: fit-content;
     background: #1b1b1b;
 }
+
 
 /* within content india_ki_heartbeat section here */
 
@@ -297,15 +328,16 @@ content {
     width: 100%;
     height: 100%;
     position: absolute;
-    padding: 4rem 4rem 2rem 4rem;
+    padding: 4rem 4rem 3rem 5rem;
     bottom: 0;
     left: 0;
     color: rgb(255, 255, 255);
-    background: #00000062;
     display: flex;
     align-items: start;
     justify-content: flex-end;
     flex-direction: column;
+    gap: 6px;
+    line-height: 1;
 }
 
 .krafton_image {
@@ -323,7 +355,6 @@ content {
 .update_container_subHero_card {
     width: 100%;
     height: 50%;
-    background: #24272a;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -339,19 +370,31 @@ content {
 }
 
 .update_container_hero_card_subtextsection {
+    width: fit-content;
+    height: fit-content;
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 3rem 2rem 0rem 3rem;
-    background: #00000076;
     color: white;
+    display: flex;
+    align-items: start;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 6px;
+    line-height: 1;
+}
+.hero_card_subtextsection1{
+    padding: 1rem 3rem 2rem 5rem;
+}
+.hero_card_subtextsection2{
+    padding: 3rem 3rem 2rem 4rem;
 }
 .cardlinks{
     width: fit-content;
     height: fit-content;
-    padding: 3px 16px 3px 16px;
+    padding: 7px 20px;
     background: #eca800;
     border-radius: 2px;
     text-decoration: none;
@@ -508,8 +551,8 @@ content {
 /* slider section is here */
 .slider_container {
     width: 100vw;
-    height: 50rem;
-    padding: 2rem 2rem 2rem 2rem;
+    height: 60rem;
+    padding: 2rem 2rem 8rem 2rem;
     background: #24272a;
 }
 
@@ -522,21 +565,153 @@ content {
 }
 
 .panel {
-    width: 400vw;
+    width: 400rem;
     height: 100%;
-    padding: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
     color: #f9f6f0;
     gap: 50px;
-    background-color: #a82626;
+}
+.panel img{
+    width: 100%;
+    height: 100%;
 }
 
+/* Partners section */
 .partners_streamers_container {
     width: 100%;
-    height: 50rem;
+    height: fit-content;
+    box-sizing: border-box;
     background: #24272a;
     color: #eca800;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.partners_streamers_container h1{
+    font-size: 5rem;
+}
+
+.video_thambnail_overlay {
+    width: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 2rem 10rem 2rem;
+    z-index: 990;
+}
+
+.video_thambnail_overlay iframe {
+    width: 90%;
+    height: 50rem;
+}
+
+/* Footer */
+footer{
+    width: 100%;
+    height: fit-content;
+}
+
+.bottomctn {
+	background-image: url('../images/footer_bg.jpg');
+	padding: 20px 0;
+	text-align: center;
+}
+
+.contains {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.appicon img {
+	width: 100px;
+	height: auto;
+	margin-bottom: 10px;
+}
+
+.tit {
+	font-size: 24px;
+	font-weight: bold;
+	color: #333;
+	margin-bottom: 20px;
+}
+
+.tablebox {
+	display: flex;
+	justify-content: center;
+}
+
+.offset_wrap {
+	display: flex;
+	gap: 10px;
+}
+
+.appstore, .google {
+	width: 150px;
+	height: 50px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+.appstore {
+	background-image: url('../assets/icons/btn_appstore_250.png'); 
+}
+
+.google {
+	background-image: url('../assets/icons/btn_googleplay_250.png');
+}
+
+#footer {
+	background-color: #343a40;
+	color: #ffffff;
+	padding: 20px 0;
+	text-align: center;
+}
+
+.footer_wrap {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.footer_text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footer_text .logo img {
+	width: 100px;
+	height: auto;
+	margin-bottom: 10px;
+}
+
+.footer_text .copyright {
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+.footer_links {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 15px;
+}
+
+.footer_links a {
+	color: #ffffff;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.footer_links a:hover {
+	text-decoration: underline;
 }

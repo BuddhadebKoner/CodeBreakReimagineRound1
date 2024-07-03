@@ -91,8 +91,6 @@ animateText();
 
 // History section horizantal scroll
 
-gsap.registerPlugin(ScrollTrigger);
-
 gsap.to(".india_ki_heartbeat_video_container", {
   xPercent: -100,
   ease: "none",
@@ -106,3 +104,48 @@ gsap.to(".india_ki_heartbeat_video_container", {
     markers: false,
   },
 });
+
+
+
+//news card section animation
+
+gsap.from(".update_container_hero_card", {
+  x: -200,
+  opacity: 0,
+  duration: 0.5,
+  scrollTrigger: {
+    trigger: ".update_container_hero_card",
+    start: "top 90%",
+    end: "bottom 100%",
+    scrub: 1,
+    markers: false,
+  },
+});
+
+gsap.from(".subhero", {
+  y: 200,
+  opacity: 0,
+  duration: 0.5,
+  scrollTrigger: {
+    trigger: ".subhero",
+    start: "top 110%",
+    end: "bottom 100%",
+    scrub: 1,
+    markers: false,
+  },
+});
+
+gsap.from(".update_container_news_section", {
+  x: 200,
+  opacity: 0,
+  duration: 0.5,
+  scrollTrigger: {
+    trigger: ".subhero",
+    start: "top 110%",
+    end: "bottom 100%",
+    scrub: 1,
+    markers: false,
+  },
+});
+
+// slider text animation
