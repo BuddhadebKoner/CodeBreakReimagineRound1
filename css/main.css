@@ -1,13 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Teko:wght@300..700&display=swap');
-
-
-
-#mainparent {
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-}
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 
 
@@ -57,7 +50,8 @@
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    top: 48px; /* Adjust to align with the height of the navbar */
+    top: 48px;
+    /* Adjust to align with the height of the navbar */
 }
 
 .hamburgur-dropdown-content a {
@@ -172,7 +166,7 @@
 
 /*  Hero section  */
 
-.hero_container{
+.hero_container {
     width: 100%;
     height: 100%;
     background: #3a1616;
@@ -185,6 +179,193 @@
 
 
 /* content section here */
+.the_latest_news {
+    width: 100%;
+    height: 40rem;
+    background-image: url(../images/backgrounds/newsbg.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.the_latest_news_heading {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px 100px 0 100px;
+}
+
+.the_latest_news_heading h1 {
+    font-size: 4rem;
+    color: var(--black);
+}
+
+.the_latest_news_heading a {
+    color: var(--black);
+    font-size: 1.8rem;
+}
+
+.the_latest_news_heading a span img {
+    width: 23px;
+    height: 23px;
+    margin-left: 5px;
+}
+
+.the_latest_news_card_container {
+    width: 97%;
+    padding: 20px;
+    gap: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: transparent;
+}
+
+.news_card_container {
+    width: 450px;
+    /* Adjust width for better responsiveness */
+    height: 450px;
+    overflow: hidden;
+    color: var(--black);
+}
+
+.news_card_banner {
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 24px;
+}
+
+.news_card_banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news_card_details {
+    height: 40%;
+    padding: 15px;
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.news_card_details_head {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.news_card_details_heading_Text {
+    font-family: "Oswald", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--news_card_details_heading_Text);
+}
+
+.news_card_details_time {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--black);
+    font-family: "Lato", sans-serif;
+}
+
+.news_card_details_body {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.news_card_details_body_text1 {
+    font-size: 1.5rem;
+    color: var(--black);
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.news_card_details_body_text2 {
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* collabration_container */
+
+.collaboration_container {
+    width: 100%;
+    height: 47rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.collaboration_container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.collaboration_text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.collaboration_text h1 {
+    font-size: 4rem;
+    color: var(--white);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.collaboration_text a {
+    background: var(--news_card_details_heading_Text);
+    font-size: 2rem;
+    padding: 10px 40px 10px 40px;
+}
+
+.collaboration_text a:hover {
+    background-image: url(../images/CerberusBtnAnim.gif);
+    outline: 1px solid #F96800;
+    outline-offset: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Footer */
 footer {
