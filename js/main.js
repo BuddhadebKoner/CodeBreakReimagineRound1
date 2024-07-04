@@ -47,3 +47,25 @@ window.onclick = function (event) {
     }
 }
 
+
+// Map switcher
+const mapImage = document.getElementById('mapImage');
+const buttons = document.querySelectorAll('.map_switch');
+
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        // Remove the active class from all buttons
+        buttons.forEach(btn => btn.classList.remove('active'));
+
+        // Add the active class to the clicked button
+        button.classList.add('active');
+
+        // Get the map name from the data-map attribute
+        const mapName = button.getAttribute('data-map');
+
+        // Change the image src attribute based on the clicked button
+        mapImage.src = `./images/backgrounds/${mapName}.jpg`;
+    });
+});
+
+
