@@ -542,17 +542,88 @@
 
 .your_move_container {
     width: 100%;
-    height: 55rem;
+    height: 40rem;
     background: #000;
+    position: relative;
+}
+
+.your_move_container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.your_move_text_container {
+    width: 50rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 8rem;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+.your_move_text_container h1{
+    font-size: 6.5rem;
+    color: var(--white);
+    font-family: oswald, sans-serif;
+}
+.your_move_text_container p{
+    font-size: 1.5rem;
+    color: var(--white);
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 1rem;
+}
+
+.your_move_text_container a{
+    background: var(--news_card_details_heading_Text);
+    font-size: 1.2rem;
+    padding: 10px 40px 10px 40px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+}
+
+.Your_move_container_btn:hover {
+    background-image: url(../images/CerberusBtnAnim.gif);
+    outline: 1px solid #F96800;
+    outline-offset: 4px;
 }
 
 
+.testimonial_section_container{
+    width: 100%;
+    height: fit-content;
+    background: #ffffff;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.testimonial_section_container video{
+    width: 80%;
+    height: 70%;
+    object-fit: cover;
+}
 
+.testimonial_section_heading{
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.testimonial_section_heading h1{
+    font-size: 4rem;
+    color: var(--black);
+}
 
-
-
-
-
+.testimonial_section_content{
+    
+}
 
 
 

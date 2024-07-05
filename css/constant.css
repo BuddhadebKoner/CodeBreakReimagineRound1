@@ -46,6 +46,7 @@ Hero {
 content {
     width: 100%;
     height: fit-content;
+    background: #a65b5b;
     display: flex;
     align-items: center;
     justify-content: center;
