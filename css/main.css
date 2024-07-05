@@ -182,7 +182,7 @@
 /* content section here */
 .the_latest_news {
     width: 100%;
-    height: 50rem;
+    height: fit-content;
     background-image: url(../images/backgrounds/newsbg.jpg);
     background-size: cover;
     background-position: center;
@@ -191,6 +191,7 @@
     justify-content: center;
     flex-direction: column;
     box-sizing: border-box;
+    padding: 5rem 0;
 }
 
 .the_latest_news_heading {
@@ -427,7 +428,12 @@
 
 .Your_map_container {
     width: 100%;
-    height: 55rem;
+    height: fit-content;
+    padding: 7rem 0;
+    background-image: url(../images/backgrounds/map_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -436,58 +442,64 @@
     position: relative;
 }
 
-
-.Your_map_container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 .Your_map_inner_container {
     width: 100%;
     height: 100%;
-    position: absolute;
     display: flex;
+    flex-wrap: wrap;
+    /* Ensure items wrap on smaller screens */
     align-items: center;
-    justify-content: space-between;
-    padding: 0 5rem;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 2rem;
+    /* Adjust padding for inner content */
+    box-sizing: border-box;
 }
 
 .map_image_container {
-    width: 550px;
-    height: 550px;
+    width: 100%;
+    max-width: 550px;
+    /* Limit maximum width for image container */
+    height: 100%;
 }
 
 .map_image_container img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
     border-radius: 0 0 10px 10px;
 }
 
 .Your_map_container_text {
-    width: 50rem;
-    height: 100%;
+    width: 100%;
+    max-width: 50rem;
+    /* Limit maximum width for text container */
     display: flex;
+    flex-direction: column;
     align-items: start;
     justify-content: center;
-    flex-direction: column;
 }
 
 .map_switcher_btns {
-    width: 550px;
-    height: fit-content;
+    width: 100%;
+    max-width: 550px;
+    /* Limit maximum width for switch buttons container */
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     background-color: var(--white);
     border-radius: 10px 10px 0 0;
+    margin-top: 20px;
+    /* Add spacing between sections */
 }
 
 .map_switch {
-    width: 100%;
-    height: 100%;
+    flex: 1;
+    /* Ensure buttons take equal space */
+    height: fit-content;
     color: var(--black);
-    font-size: 1.2rem;
+    font-size: 1rem;
+    /* Adjust font size */
     font-family: "Inter", sans-serif;
     font-weight: 600;
     border-right: 1px solid var(--white);
@@ -498,38 +510,42 @@
     color: var(--white);
 }
 
-
 .Your_map_container_text h1 {
-    font-size: 6.5rem;
+    font-size: 4rem;
+    /* Adjust font size for smaller screens */
     color: var(--map_heading_text);
     font-family: oswald, sans-serif;
+    margin-top: 20px;
+    /* Add spacing */
 }
 
-
 .Your_map_container_text_subheadings {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    /* Adjust font size */
     color: var(--map_heading_text);
     font-weight: 700;
     font-family: "Inter", sans-serif;
     margin-bottom: 1rem;
 }
 
-
 .Your_map_container_text_paragraph {
-    font-size: 1.4rem;
+    font-size: 0.9rem;
+    /* Adjust font size */
     color: var(--map_heading_text);
     font-family: "Lato", sans-serif;
     margin-bottom: 2rem;
-
 }
-
 
 .Your_map_container_btn {
     background: var(--news_card_details_heading_Text);
-    font-size: 1.2rem;
-    padding: 10px 40px 10px 40px;
+    font-size: 0.9rem;
+    /* Adjust font size */
+    padding: 10px 30px;
+    /* Adjust button padding */
     font-family: "Inter", sans-serif;
     font-weight: 600;
+    margin-top: 20px;
+    /* Add spacing */
 }
 
 .Your_map_container_btn:hover {
@@ -538,13 +554,17 @@
     outline-offset: 4px;
 }
 
+
 /* your_move_container */
 
 .your_move_container {
     width: 100%;
-    height: 40rem;
+    height: auto;
+    /* Adjust height as per your design needs */
     background: #000;
     position: relative;
+    padding: 20px;
+    /* Add padding for inner elements */
 }
 
 .your_move_container img {
@@ -554,47 +574,68 @@
 }
 
 .your_move_text_container {
-    width: 50rem;
+    width: 100%;
+    max-width: 50rem;
+    /* Limit maximum width for text container */
     height: 100%;
     position: absolute;
     top: 0;
-    left: 8rem;
+    left: 0;
     display: flex;
     align-items: start;
     justify-content: center;
     flex-direction: column;
+    padding: 0 1rem;
+    /* Adjust padding for inner content */
+    box-sizing: border-box;
 }
-.your_move_text_container h1{
-    font-size: 6.5rem;
+
+.your_move_text_container h1 {
+    font-size: 4rem;
+    /* Adjust font size for smaller screens */
     color: var(--white);
     font-family: oswald, sans-serif;
+    margin-bottom: 1rem;
+    /* Add spacing */
 }
-.your_move_text_container p{
-    font-size: 1.5rem;
+
+.your_move_text_container p {
+    font-size: 1.2rem;
+    /* Adjust font size */
     color: var(--white);
     font-weight: 700;
     font-family: "Inter", sans-serif;
     margin-bottom: 1rem;
+    /* Add spacing */
 }
 
-.your_move_text_container a{
+.your_move_text_container a {
     background: var(--news_card_details_heading_Text);
-    font-size: 1.2rem;
-    padding: 10px 40px 10px 40px;
+    font-size: 1rem;
+    /* Adjust font size */
+    padding: 8px 30px;
+    /* Adjust button padding */
     font-family: "Inter", sans-serif;
     font-weight: 600;
+    display: inline-block;
+    /* Ensure button behaves as block element */
+    margin-top: 20px;
+    /* Add spacing */
 }
 
-.Your_move_container_btn:hover {
+.your_move_text_container a:hover {
     background-image: url(../images/CerberusBtnAnim.gif);
     outline: 1px solid #F96800;
     outline-offset: 4px;
 }
 
+/* testimonial section */
+/* Testimonial Section Styles */
 
-.testimonial_section_container{
+.testimonial_section_container {
     width: 100%;
-    height: fit-content;
+    height: auto;
+    /* Adjust height as per content */
     background: #ffffff;
     position: relative;
     overflow: hidden;
@@ -602,43 +643,69 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 50px 0;
+    /* Adjust padding as needed */
+    box-sizing: border-box;
 }
-.testimonial_section_container video{
+
+.testimonial_section_container video {
     width: 80%;
     height: 70%;
     object-fit: cover;
+    margin-bottom: 20px;
+    /* Add spacing */
 }
 
-.testimonial_section_heading{
+.testimonial_section_heading {
     width: 80%;
     height: fit-content;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    margin-bottom: 20px;
+    /* Add spacing */
 }
-.testimonial_section_heading h1{
-    font-size: 4rem;
+
+.testimonial_section_heading h1 {
+    font-size: 3.5rem;
+    /* Adjust font size */
     color: var(--black);
 }
 
-.testimonial_section_content{
-    
+.testimonial_section_content {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    /* Adjust gap between items */
 }
 
+/* Media Query for Responsive Design */
 
+@media (max-width: 768px) {
+    .testimonial_section_container {
+        padding: 30px 0;
+        /* Adjust padding */
+    }
+
+    .testimonial_section_heading h1 {
+        font-size: 3rem;
+        /* Adjust font size */
+    }
+
+    .testimonial_section_content {
+        width: 90%;
+        /* Adjust width */
+    }
+}
 
 
 
 
 
 /* Footer */
-footer {
-    width: 100%;
-    height: fit-content;
-}
 
 .bottomctn {
-    background-image: url('../images/footer_bg.jpg');
     padding: 20px 0;
     text-align: center;
 }

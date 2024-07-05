@@ -1,0 +1,467 @@
+/* Desktop And tablate */
+@media (max-width: 1024px) {}
+
+/* For screens up to 768px (Tablet) */
+@media (max-width: 768px) {
+    .hero_container {
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* news section */
+    .the_latest_news {
+        height: fit-content;
+    }
+
+    .the_latest_news_heading {
+        padding: 10px 50px 0 50px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .the_latest_news_heading h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+    .the_latest_news_heading a {
+        font-size: 1.5rem;
+    }
+
+    .the_latest_news_card_container {
+        gap: 10px;
+    }
+
+    .news_card_container {
+        width: 300px;
+        height: 350px;
+    }
+
+    .news_card_details_body_text1 {
+        font-size: 1.2rem;
+    }
+
+    .news_card_details_body_text2 {
+        font-size: 0.8rem;
+    }
+
+    /* colabrator section */
+    .collaboration_container {
+        height: 35rem;
+    }
+
+    .collaboration_text {
+        padding: 20px;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .collaboration_text h1 {
+        font-size: 3rem;
+    }
+
+    .collaboration_text a {
+        font-size: 1.5rem;
+        padding: 8px 30px;
+    }
+
+    /* character section */
+    .your_character_container {
+        height: auto;
+        padding: 20px;
+    }
+
+    .your_character_container_text {
+        width: 100%;
+        left: 0;
+        padding: 0;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .your_character_container_text h1 {
+        font-size: 4rem;
+    }
+
+    .your_character_container_text_subheadings {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .your_character_container_text_paragraph {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .your_character_container_btn {
+        font-size: 1rem;
+        padding: 8px 30px;
+    }
+
+    /* map section */
+    .Your_map_container {
+        height: fit-content;
+        padding: 20px;
+    }
+
+    .Your_map_inner_container {
+        padding: 0 2rem;
+    }
+
+    .map_image_container {
+        width: 100%;
+        height: 400px;
+        /* Adjust height for better responsiveness */
+    }
+
+    .Your_map_container_text {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Your_map_container_text h1 {
+        font-size: 4rem;
+    }
+
+    .Your_map_container_text_subheadings {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .Your_map_container_text_paragraph {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .Your_map_container_btn {
+        font-size: 1rem;
+        padding: 8px 30px;
+    }
+
+    /* your move section */
+    .your_move_text_container {
+        max-width: 100%;
+        left: 0;
+        padding: 0 20px;
+        /* Adjust padding */
+        text-align: center;
+        /* Center-align text on smaller screens */
+    }
+
+    .your_move_text_container h1 {
+        font-size: 3rem;
+        /* Adjust font size */
+    }
+
+    .your_move_text_container p {
+        font-size: 1rem;
+        /* Adjust font size */
+    }
+
+    .your_move_text_container a {
+        font-size: 0.9rem;
+        /* Adjust font size */
+        padding: 8px 20px;
+        /* Adjust button padding */
+    }
+
+    /* testimonial section */
+    .testimonial_section_container {
+        padding: 30px 0;
+        /* Adjust padding */
+    }
+
+    .testimonial_section_heading h1 {
+        font-size: 3rem;
+        /* Adjust font size */
+    }
+
+    .testimonial_section_content {
+        width: 90%;
+        /* Adjust width */
+    }
+
+    /* footer */
+    .contains {
+        padding: 0 10px;
+        /* Reduce horizontal padding */
+    }
+
+    .tit {
+        font-size: 20px;
+        /* Decrease font size */
+    }
+
+    .appicon img {
+        width: 80px;
+        /* Reduce icon size */
+    }
+
+    .appstore,
+    .google {
+        width: 120px;
+        height: 40px;
+        /* Adjust button size */
+    }
+}
+
+/* For screens up to 500px (Mobile) */
+@media (max-width: 500px) {
+    .hero_container {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .hero_container h1 {
+        font-size: 1.5rem;
+    }
+
+    /* news section  */
+
+    .the_latest_news_heading {
+        padding: 10px 20px 0 20px;
+    }
+
+    .the_latest_news_heading h1 {
+        font-size: 2rem;
+    }
+
+    .the_latest_news_heading a {
+        font-size: 1.2rem;
+    }
+
+    .the_latest_news_heading a span img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .the_latest_news_card_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .news_card_container {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .news_card_banner {
+        height: 200px;
+    }
+
+    .news_card_details {
+        padding: 10px;
+    }
+
+    .news_card_details_head {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .news_card_details_body_text1 {
+        font-size: 1rem;
+    }
+
+    .news_card_details_body_text2 {
+        font-size: 0.8rem;
+    }
+
+    /* colabrater section */
+    .collaboration_container {
+        height: auto;
+    }
+
+    .collaboration_text {
+        padding: 10px;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .collaboration_text h1 {
+        font-size: 2.5rem;
+    }
+
+    .collaboration_text a {
+        font-size: 1.2rem;
+        padding: 6px 20px;
+    }
+
+    /* character section */
+    .your_character_container {
+        height: auto;
+        padding: 10px;
+    }
+
+    .your_character_container_text {
+        width: 100%;
+        left: 0;
+        padding: 0;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .your_character_container_text h1 {
+        font-size: 3rem;
+    }
+
+    .your_character_container_text_subheadings {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .your_character_container_text_paragraph {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .your_character_container_btn {
+        font-size: 0.9rem;
+        padding: 6px 20px;
+    }
+
+    /* map section */
+    .Your_map_container {
+        padding: 5px;
+        /* Further adjust padding */
+    }
+
+    .Your_map_container_text {
+        max-width: 100%;
+    }
+
+    .Your_map_container_text h1 {
+        font-size: 2.5rem;
+        /* Further adjust font size */
+    }
+
+    .Your_map_container_text_subheadings {
+        font-size: 0.9rem;
+        /* Further adjust font size */
+    }
+
+    .Your_map_container_text_paragraph {
+        font-size: 0.7rem;
+        /* Further adjust font size */
+    }
+
+    .Your_map_container_btn {
+        font-size: 0.7rem;
+        /* Further adjust font size */
+        padding: 6px 16px;
+        /* Further adjust button padding */
+    }
+
+    /* your move section */
+    .your_move_text_container {
+        padding: 0 10px;
+        /* Further adjust padding */
+    }
+
+    .your_move_text_container h1 {
+        font-size: 2.5rem;
+        /* Further adjust font size */
+    }
+
+    .your_move_text_container p {
+        font-size: 0.9rem;
+        /* Further adjust font size */
+    }
+
+    .your_move_text_container a {
+        font-size: 0.8rem;
+        /* Further adjust font size */
+        padding: 6px 16px;
+        /* Further adjust button padding */
+    }
+
+    /* testimonial */
+    .testimonial_section_heading h1 {
+        font-size: 2.5rem;
+        /* Further reduce font size */
+    }
+
+    .testimonial_section_content {
+        grid-template-columns: 1fr;
+        /* Stack items in a single column */
+    }
+
+    /* footers */
+    .contains {
+        padding: 0 5px;
+        /* Further reduce horizontal padding */
+    }
+
+    .tit {
+        font-size: 18px;
+        /* Decrease font size */
+    }
+
+    .appicon img {
+        width: 60px;
+        /* Reduce icon size */
+    }
+
+    .appstore,
+    .google {
+        width: 100px;
+        height: 30px;
+        /* Adjust button size */
+    }
+
+    .footer_links {
+        flex-direction: column;
+        /* Stack links vertically */
+        gap: 10px;
+        /* Adjust gap between links */
+    }
+}
+
+
+
+/* navbar */
+@media (max-width : 1192px) {
+    .menu {
+        display: none; /* Hide regular menu items */
+    }
+    .logo{
+        margin-right: auto;
+    }
+    .logo img{
+        margin-right: 0;
+    }
+}
+/* Tablet (max-width: 768px) */
+@media (max-width: 768px) {
+    .navbar_container {
+        flex-direction: row; /* Stack items vertically */
+    }
+
+
+    .menu-hamburgur {
+        display: block; /* Show hamburger menu */
+    }
+
+    .menu {
+        display: none; /* Hide regular menu items */
+    }
+
+    .download_nav_links{
+        font-size: 0.8rem;
+    }
+}
+@media (max-width : 706px) {
+    .downloads_container{
+        display: none;
+    }    
+    .logo{
+        margin-left: auto;
+        margin-right: 15px;
+    }
+}

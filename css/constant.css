@@ -52,6 +52,10 @@ content {
     justify-content: center;
     flex-direction: column;
 }
+footer {
+    width: 100%;
+    height: fit-content;
+}
 
 
 a {
