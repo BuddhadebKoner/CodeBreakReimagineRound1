@@ -449,7 +449,7 @@
     flex-wrap: wrap;
     /* Ensure items wrap on smaller screens */
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 20px;
     padding: 0 2rem;
     /* Adjust padding for inner content */
@@ -459,8 +459,11 @@
 .map_image_container {
     width: 100%;
     max-width: 550px;
-    /* Limit maximum width for image container */
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .map_image_container img {
@@ -482,8 +485,6 @@
 
 .map_switcher_btns {
     width: 100%;
-    max-width: 550px;
-    /* Limit maximum width for switch buttons container */
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -538,7 +539,7 @@
 
 .Your_map_container_btn {
     background: var(--news_card_details_heading_Text);
-    font-size: 0.9rem;
+    font-size: 2rem;
     /* Adjust font size */
     padding: 10px 30px;
     /* Adjust button padding */
@@ -559,12 +560,9 @@
 
 .your_move_container {
     width: 100%;
-    height: auto;
-    /* Adjust height as per your design needs */
+    height: fit-content;
     background: #000;
     position: relative;
-    padding: 20px;
-    /* Add padding for inner elements */
 }
 
 .your_move_container img {
@@ -575,8 +573,6 @@
 
 .your_move_text_container {
     width: 100%;
-    max-width: 50rem;
-    /* Limit maximum width for text container */
     height: 100%;
     position: absolute;
     top: 0;
@@ -585,22 +581,20 @@
     align-items: start;
     justify-content: center;
     flex-direction: column;
-    padding: 0 1rem;
-    /* Adjust padding for inner content */
+    padding: 0 5rem;
     box-sizing: border-box;
 }
 
 .your_move_text_container h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     /* Adjust font size for smaller screens */
     color: var(--white);
     font-family: oswald, sans-serif;
     margin-bottom: 1rem;
-    /* Add spacing */
 }
 
 .your_move_text_container p {
-    font-size: 1.2rem;
+    font-size: 3rem;
     /* Adjust font size */
     color: var(--white);
     font-weight: 700;
@@ -611,7 +605,7 @@
 
 .your_move_text_container a {
     background: var(--news_card_details_heading_Text);
-    font-size: 1rem;
+    font-size: 2rem;
     /* Adjust font size */
     padding: 8px 30px;
     /* Adjust button padding */
@@ -682,22 +676,20 @@
 
 /* Media Query for Responsive Design */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .testimonial_section_container {
         padding: 30px 0;
-        /* Adjust padding */
     }
 
     .testimonial_section_heading h1 {
         font-size: 3rem;
-        /* Adjust font size */
+
     }
 
     .testimonial_section_content {
         width: 90%;
-        /* Adjust width */
     }
-}
+} */
 
 
 

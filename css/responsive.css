@@ -68,30 +68,31 @@
 
     /* character section */
     .your_character_container {
-        height: auto;
-        padding: 20px;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
     }
 
     .your_character_container_text {
-        width: 100%;
+        width: 80%;
         left: 0;
-        padding: 0;
-        text-align: center;
-        align-items: center;
+        padding: 3rem;
+        text-align: start;
+        align-items: start;
         justify-content: center;
     }
 
     .your_character_container_text h1 {
-        font-size: 4rem;
+        font-size: 30px;
     }
 
     .your_character_container_text_subheadings {
-        font-size: 1.2rem;
+        font-size: 10px;
         margin-bottom: 0.5rem;
     }
 
     .your_character_container_text_paragraph {
-        font-size: 1rem;
+        font-size:10px;
         margin-bottom: 1.5rem;
     }
 
@@ -101,23 +102,32 @@
     }
 
     /* map section */
+
+    .map_switch{
+        font-size: 10px;
+        padding: 5px;
+    }
+
     .Your_map_container {
         height: fit-content;
-        padding: 20px;
+        padding: 0;
     }
 
     .Your_map_inner_container {
-        padding: 0 2rem;
+        padding: 6rem 0;
     }
 
     .map_image_container {
-        width: 100%;
-        height: 400px;
+        width: 90%;
+        height: fit-content;
         /* Adjust height for better responsiveness */
+    }
+    .map_image_container img{
+        height: 450px;
     }
 
     .Your_map_container_text {
-        width: 100%;
+        width: 90%;
         padding: 0;
         text-align: center;
         align-items: center;
@@ -294,41 +304,54 @@
 
     /* character section */
     .your_character_container {
-        height: auto;
-        padding: 10px;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
     }
 
     .your_character_container_text {
-        width: 100%;
+        width: 80%;
         left: 0;
-        padding: 0;
-        text-align: center;
-        align-items: center;
+        padding: 2rem;
+        text-align: start;
+        align-items: start;
         justify-content: center;
     }
 
     .your_character_container_text h1 {
-        font-size: 3rem;
+        font-size: 20px;
     }
 
     .your_character_container_text_subheadings {
-        font-size: 1rem;
-        margin-bottom: 0.5rem;
+        font-size: 7px;
+        margin-bottom: 10px;
     }
 
     .your_character_container_text_paragraph {
-        font-size: 0.9rem;
-        margin-bottom: 1rem;
+        font-size:7px;
+        margin-bottom: 10px;
     }
 
     .your_character_container_btn {
-        font-size: 0.9rem;
-        padding: 6px 20px;
+        font-size: 1rem;
+        padding: 5px 10px;
+        font-size: 10px;
     }
 
     /* map section */
+    .map_switch{
+        font-size: 5px;
+        padding: 3px;
+    }
+
+    .map_image_container {
+        width: 90%;
+        height: 100%;
+        /* Adjust height for better responsiveness */
+    }
+
     .Your_map_container {
-        padding: 5px;
+        padding: 2rem 0;
         /* Further adjust padding */
     }
 
@@ -360,25 +383,22 @@
 
     /* your move section */
     .your_move_text_container {
-        padding: 0 10px;
-        /* Further adjust padding */
+        padding: 0 30px;
     }
 
     .your_move_text_container h1 {
-        font-size: 2.5rem;
-        /* Further adjust font size */
+        font-size: 20px;
+        margin: 0;
     }
 
     .your_move_text_container p {
-        font-size: 0.9rem;
-        /* Further adjust font size */
+        font-size: 10px;
+        margin: 0;
     }
 
     .your_move_text_container a {
-        font-size: 0.8rem;
-        /* Further adjust font size */
+        font-size: 10px;
         padding: 6px 16px;
-        /* Further adjust button padding */
     }
 
     /* testimonial */
