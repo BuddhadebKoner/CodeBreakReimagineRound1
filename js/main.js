@@ -85,15 +85,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const sections = document.querySelectorAll('nav, #hero, #content, footer');
 
     // Simulate a delay to demonstrate the loader (remove this in production)
-    // setTimeout(() => {
-    //     loader.style.display = 'none';
-    //     sections.forEach(section => {
-    //         section.style.display = 'block';
-    //     });
-    // }, 3000); // 3 seconds delay
+    setTimeout(() => {
+        loader.style.display = 'none';
+        sections.forEach(section => {
+            section.style.display = 'block';
+        });
+    }, 3000); // 3 seconds delay
 
-    loader.style.display = 'none';
-    sections.forEach(section => {
-        section.style.display = 'block';
-    });
+    // loader.style.display = 'none';
+    // sections.forEach(section => {
+    //     section.style.display = 'block';
+    // });
 });
