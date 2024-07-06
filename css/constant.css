@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/* making color constant  */
+/* Making color constant */
 :root {
     --nav-bg: rgba(51, 51, 51, 0.6);
     --white: #fff;
@@ -14,7 +14,6 @@
     --map_heading_text: #0f1923;
 }
 
-
 body {
     width: 100vw;
     height: fit-content;
@@ -22,14 +21,15 @@ body {
     color: #2a4e72;
     font-size: 16px;
     line-height: 1.6;
-    overflow-y: auto;
     overflow-x: hidden;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
     user-select: none;
 }
 
-navbar {
+
+nav {
     width: 100vw;
     height: fit-content;
     display: flex;
@@ -38,12 +38,12 @@ navbar {
     position: absolute;
 }
 
-Hero {
+#hero {
     width: 100vw;
     height: 50rem;
 }
 
-content {
+#content {
     width: 100%;
     height: fit-content;
     background: #a65b5b;
@@ -51,7 +51,9 @@ content {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    /* Initially hide the content */
 }
+
 footer {
     width: 100%;
     height: fit-content;
@@ -60,10 +62,10 @@ footer {
 
 a {
     color: rgb(255, 255, 255);
-    text-decoration: none
+    text-decoration: none;
 }
 
-button{
+button {
     cursor: pointer;
     border: none;
     outline: none;
@@ -74,4 +76,11 @@ button{
     padding: 0.5rem 1rem;
     border-radius: 0;
     transition: all 0.3s ease;
+}
+
+nav,
+#hero,
+#content,
+footer {
+    display: none;
 }

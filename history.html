@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BattleGrounds Mobile India History</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #FFD700;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            font-family: teko sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #FFD700;
+            color: #000;
+        }
+        footer {
+            background-color: #FFD700;
+            color: #000;
+            text-align: center;
+            padding: 10px;
+        }
+        h1 {
+            margin: 0;
+        }
+        .timeline {
+            position: relative;
+            padding: 40px 0;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 4px;
+            background: #FFD700;
+        }
+        .event {
+            padding: 20px;
+            width: 50%;
+            position: relative;
+            box-sizing: border-box;
+        }
+        .event.left {
+            left: 0;
+            text-align: right;
+        }
+        .event.right {
+            left: 50%;
+        }
+        .event::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #FFD700;
+        }
+        .event.left::before {
+            right: -10px;
+        }
+        .event.right::before {
+            left: -10px;
+        }
+        .event-content {
+            background: #222;
+            padding: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Battlegrounds Mobile India History</h1>
+    </header>
+    <div class="container">
+        <div class="timeline">
+            <div class="event left">
+                <div class="event-content">
+                    <h2>2021</h2>
+                    <p>BGMI was officially launched in India, bringing excitement to millions of players nationwide.</p>
+                </div>
+            </div>
+            <div class="event right">
+                <div class="event-content">
+                    <h2>2022</h2>
+                    <p>BGMI held its first major tournament, with a record number of participants and viewers.</p>
+                </div>
+            </div>
+            <div class="event left">
+                <div class="event-content">
+                    <h2>2023</h2>
+                    <p>BGMI introduced new game modes and features, enhancing the gaming experience for all players.</p>
+                </div>
+            </div>
+            <div class="event right">
+                <div class="event-content">
+                    <h2>2024</h2>
+                    <p>BGMI continues to grow in popularity, with new updates and content being released regularly.</p>
+                </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Battlegrounds Mobile India. All rights reserved.</p>
+</body>
+</html>

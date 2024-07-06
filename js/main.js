@@ -68,4 +68,32 @@ buttons.forEach(button => {
     });
 });
 
+gsap.fromTo(
+    ".loading-page",
+    { opacity: 1 },
+    {
+        opacity: 0,
+        display: "none",
+        duration: 1.5,
+        delay: 3.5,
+    }
+);
 
+
+document.addEventListener("DOMContentLoaded", () => {
+    const loader = document.querySelector('.loading-page');
+    const sections = document.querySelectorAll('nav, #hero, #content, footer');
+
+    // Simulate a delay to demonstrate the loader (remove this in production)
+    // setTimeout(() => {
+    //     loader.style.display = 'none';
+    //     sections.forEach(section => {
+    //         section.style.display = 'block';
+    //     });
+    // }, 3000); // 3 seconds delay
+
+    loader.style.display = 'none';
+    sections.forEach(section => {
+        section.style.display = 'block';
+    });
+});
