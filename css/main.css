@@ -37,7 +37,7 @@
 /* Here All styles for navbar */
 .navbar_container {
     width: 80vw;
-    height: 48px;
+    height: 60px;
     margin: auto;
     background: var(--nav-bg);
     margin-top: 30px;
@@ -45,6 +45,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+    z-index: 10;
 }
 
 .menu-hamburgur {
@@ -52,11 +53,14 @@
     height: 100%;
     position: relative;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .menu-hamburgur img {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     margin: 7px;
 }
 
@@ -67,8 +71,8 @@
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    top: 48px;
-    /* Adjust to align with the height of the navbar */
+    top: 60px;
+    left: 0;
 }
 
 .hamburgur-dropdown-content a {
@@ -106,7 +110,7 @@
 
 .navbar-links-a-tag {
     color: var(--white);
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     text-decoration: none;
 }
 
@@ -160,6 +164,7 @@
 .dropdown-content {
     display: none;
     position: absolute;
+    /* top: 40px; */
     background-color: var(--nav-bg);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -171,6 +176,7 @@
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    font-size: 1.1rem;
 }
 
 .dropdown-content a:hover {
@@ -182,16 +188,48 @@
 }
 
 /*  Hero section  */
-
 .hero_container {
     width: 100%;
-    height: 100%;
+    height: 50rem;
+    /* Make sure it covers the viewport height */
     background: #3a1616;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    gap: 20px;
+    position: relative;
+    overflow: hidden;
+    /* Ensure the content doesn't overflow */
+}
+
+.hero_container video {
+    position: absolute;
+    /* Position the video absolutely */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.Hero_text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #00000053;
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.Hero_text h1 {
+    margin: 0;
+    font-size: 3rem;
+    /* Adjust font size as needed */
 }
 
 
@@ -578,7 +616,7 @@
 
 .your_move_container {
     width: 100%;
-    height: fit-content;
+    height: 60rem;
     background: #000;
     position: relative;
 }
@@ -599,7 +637,7 @@
     align-items: start;
     justify-content: center;
     flex-direction: column;
-    padding: 0 5rem;
+    padding: 0 7rem;
     box-sizing: border-box;
 }
 
