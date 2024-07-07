@@ -1,11 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/map.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/scrollbar.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <title>Your Maps</title>
 </head>
+
 <body>
-    <h1>maps</h1>
+    <!-- navbar section -->
+    <nav id="navbar">
+        <div class="navbar_container">
+            <div class="logo">
+                <img src="./images/logo.png" alt="">
+            </div>
+            <div class="menu">
+                <a class="navbar-links-a-tag" href="index.html">HOME</a>
+                <a class="navbar-links-a-tag" href="characters.html">AGENTS</a>
+                <a class="navbar-links-a-tag" href="history.html">HISTORY</a>
+            </div>
+            <div class="downloads_container">
+                <a href="" class="download_nav_links">IOS-DOWNLOADS</a>
+                <a href="" class="download_nav_links">AOS-DOWNLOADS</a>
+                <div class="card_nav_link">
+                    <a href="cart.html">
+                        <img src="./assets/icons/cart.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="characters">
+        <div class="container">
+            <div class="swiper character-slider">
+                <div class="swiper-wrapper">
+                    <!-- Slide-start -->
+                    <div class="swiper-slide character-slide">
+                        <div class="character-slide-img">
+                            <img src="images/character-1.jpg" alt="Character">
+                        </div>
+                        <div class="character-slide-content">
+                            <h1 class="character-price">$20</h1>
+                            <div class="character-slide-content-bottom">
+                                <h2 class="character-name">Character Name 1</h2>
+                                <h3 class="character-rating">
+                                    <span>4.5</span>
+                                    <div class="rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide-end -->
+                    <!-- Slide-start -->
+                    <div class="swiper-slide character-slide">
+                        <div class="character-slide-img">
+                            <img src="images/character-2.jpg" alt="Character">
+                        </div>
+                        <div class="character-slide-content">
+                            <h1 class="character-price">$20</h1>
+                            <div class="character-slide-content-bottom">
+                                <h2 class="character-name">Character Name 2</h2>
+                                <h3 class="character-rating">
+                                    <span>4.5</span>
+                                    <div class="rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide-end -->
+                    <!-- Slide-start -->
+                    <div class="swiper-slide character-slide">
+                        <div class="character-slide-img">
+                            <img src="images/character-3.jpg" alt="Character">
+                        </div>
+                        <div class="character-slide-content">
+                            <h1 class="character-price">$40</h1>
+                            <div class="character-slide-content-bottom">
+                                <h2 class="character-name">Character Name 3</h2>
+                                <h3 class="character-rating">
+                                    <span>4.5</span>
+                                    <div class="rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide-end -->
+                    <!-- Slide-start -->
+                    <div class="swiper-slide character-slide">
+                        <div class="character-slide-img">
+                            <img src="images/character-4.jpg" alt="Character">
+                        </div>
+                        <div class="character-slide-content">
+                            <h1 class="character-price">$15</h1>
+                            <div class="character-slide-content-bottom">
+                                <h2 class="character-name">Character Name 4</h2>
+                                <h3 class="character-rating">
+                                    <span>4.5</span>
+                                    <div class="rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide-end -->
+                    <!-- Slide-start -->
+                    <div class="swiper-slide character-slide">
+                        <div class="character-slide-img">
+                            <img src="images/character-5.jpg" alt="Character">
+                        </div>
+                        <div class="character-slide-content">
+                            <h1 class="character-price">$15</h1>
+                            <div class="character-slide-content-bottom">
+                                <h2 class="character-name">Character Name 5</h2>
+                                <h3 class="character-rating">
+                                    <span>4.5</span>
+                                    <div class="rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide-end -->
+                    <!-- Slide-start -->
+                    <div class="swiper-slide character-slide">
+                        <div class="character-slide-img">
+                            <img src="images/character-6.jpg" alt="Character">
+                        </div>
+                        <div class="character-slide-content">
+                            <h1 class="character-price">$20</h1>
+                            <div class="character-slide-content-bottom">
+                                <h2 class="character-name">Character Name 6</h2>
+                                <h3 class="character-rating">
+                                    <span>4.5</span>
+                                    <div class="rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide-end -->
+                    <!-- Slide-start -->
+                    <div class="swiper-slide character-slide">
+                        <div class="character-slide-img">
+                            <img src="images/character-7.jpg" alt="Character">
+                        </div>
+                        <div class="character-slide-content">
+                            <h1 class="character-price">$8</h1>
+                            <div class="character-slide-content-bottom">
+                                <h2 class="character-name">Character Name 7</h2>
+                                <h3 class="character-rating">
+                                    <span>4.5</span>
+                                    <div class="rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide-end -->
+                </div>
+
+                <div class="character-slider-control">
+                    <div class="swiper-button-prev slider-arrow">
+                        <ion-icon name="arrow-back-outline"></ion-icon>
+                    </div>
+                    <div class="swiper-button-next slider-arrow">
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/map.js"></script>
 </body>
+
 </html>
